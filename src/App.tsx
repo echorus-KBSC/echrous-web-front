@@ -1,7 +1,7 @@
 import React from 'react';
+import './App.css';
 import { css, Global } from '@emotion/react';
 import normalize from 'emotion-normalize';
-import { theme as chakraTheme } from '@chakra-ui/react';
 import Routes from './pages/Routes';
 const App = () => {
     return (
@@ -13,7 +13,7 @@ const App = () => {
                         box-sizing: border-box;
                         background-color: transparent;
                         border: none;
-                        font: ${chakraTheme.fonts.body};
+                        font-family: 'Montserra, sans-serif';
                     }
                     a {
                         text-decoration: none;
@@ -32,7 +32,7 @@ const App = () => {
                     h5,
                     h6 {
                         margin: 0;
-                        font: ${chakraTheme.fonts.heading};
+                        font-family: 'Montserra, sans-serif';
                     }
                 `}
             />
