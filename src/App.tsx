@@ -1,8 +1,8 @@
-import React from 'react';
 import './App.css';
 import { css, Global } from '@emotion/react';
 import normalize from 'emotion-normalize';
 import Routes from './pages/Routes';
+
 const App = () => {
     return (
         <>
