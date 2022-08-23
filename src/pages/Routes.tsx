@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 
 import Main from './Main';
+import AboutTeam from './AboutTeam';
 import { PageWithLayout } from './PageWithLayout';
 
 const Routes = () => {
@@ -13,6 +14,7 @@ const Routes = () => {
             <ReactRouterRoutes>
                 <Route element={<PageWithLayout />}>
                     <Route index element={<Main />} />
+                    <Route path="/about-team" element={<AboutTeam />} />
                 </Route>
             </ReactRouterRoutes>
         </Router>
