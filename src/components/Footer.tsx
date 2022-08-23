@@ -7,7 +7,6 @@ const Footer = () => {
         <footer
             css={css`
                 position: absolute;
-                bottom: 0px;
 
                 display: flex;
                 width: 100vw;

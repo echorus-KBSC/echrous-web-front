@@ -10,6 +10,7 @@ const MainContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 100px;
+    height: calc(100vh - 288px);
 `;
 const MainBlock = styled.main`
     display: flex;
