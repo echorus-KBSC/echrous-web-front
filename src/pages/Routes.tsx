@@ -7,6 +7,7 @@ import {
 import Main from './Main';
 import AboutTeam from './AboutTeam';
 import { PageWithLayout } from './PageWithLayout';
+import Search from './Search';
 
 const Routes = () => {
     return (
@@ -15,6 +16,7 @@ const Routes = () => {
                 <Route element={<PageWithLayout />}>
                     <Route index element={<Main />} />
                     <Route path="/about-team" element={<AboutTeam />} />
+                    <Route path="/search" element={<Search />} />
                 </Route>
             </ReactRouterRoutes>
         </Router>
