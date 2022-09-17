@@ -2,6 +2,12 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import logo from '../images/logo.svg';
+import huichan from '../images/kasterra-logo.jpg';
+import hanyong from '../images/hanyong.jpg';
+import noah from '../images/noah.jpg';
+import hyunji from '../images/hyunji.jpg';
+import yunsung from '../images/yunsung.jpg';
+import jaeyong from '../images/jaeyong.jpg';
 
 const MainContainer = styled.div`
     display: flex;
@@ -81,32 +87,32 @@ const AboutTeam = () => {
                 <h2>각자 이런 역할을 했어요</h2>
                 <TeamMateInfoGrid>
                     <TeamMateInfoCard>
-                        <img src="https://picsum.photos/300" alt="profile" />
+                        <img src={noah} alt="profile" />
                         <h3>명노아</h3>
                         <h5>기획</h5>
                     </TeamMateInfoCard>
                     <TeamMateInfoCard>
-                        <img src="https://picsum.photos/300" alt="profile" />
+                        <img src={hanyong} alt="profile" />
                         <h3>김한용</h3>
                         <h5>유니티 클라이언트 개발</h5>
                     </TeamMateInfoCard>
                     <TeamMateInfoCard>
-                        <img src="https://picsum.photos/300" alt="profile" />
+                        <img src={jaeyong} alt="profile" />
                         <h3>이재영</h3>
                         <h5>유니티 클라이언트 개발</h5>
                     </TeamMateInfoCard>
                     <TeamMateInfoCard>
-                        <img src="https://picsum.photos/300" alt="profile" />
+                        <img src={yunsung} alt="profile" />
                         <h3>장윤성</h3>
                         <h5>서버, DB</h5>
                     </TeamMateInfoCard>
                     <TeamMateInfoCard>
-                        <img src="https://picsum.photos/300" alt="profile" />
+                        <img src={huichan} alt="profile" />
                         <h3>이휘찬</h3>
                         <h5>웹 프론트엔드 & 디자인</h5>
                     </TeamMateInfoCard>
                     <TeamMateInfoCard>
-                        <img src="https://picsum.photos/300" alt="profile" />
+                        <img src={hyunji} alt="profile" />
                         <h3>김현지</h3>
                         <h5>데이터 엔지니어</h5>
                     </TeamMateInfoCard>

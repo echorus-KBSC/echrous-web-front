@@ -3,7 +3,6 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.svg';
-import { UserActionBtns } from './UserActionBtns';
 
 const LinkBtns = styled.div`
     width: 383px;
@@ -50,7 +49,6 @@ const Header = () => {
                     <LinkBtn to="/search">카드 검색</LinkBtn>
                     <LinkBtn to="/about-team">팀 소개</LinkBtn>
                 </LinkBtns>
-                <UserActionBtns />
             </div>
         </header>
     );
