@@ -9,6 +9,7 @@ import AboutTeam from './AboutTeam';
 import { PageWithLayout } from './PageWithLayout';
 import Search from './Search';
 import Achievements from './Achievements';
+import AboutGame from './AboutGame';
 
 const Routes = () => {
     return (
@@ -16,6 +17,7 @@ const Routes = () => {
             <ReactRouterRoutes>
                 <Route element={<PageWithLayout />}>
                     <Route index element={<Main />} />
+                    <Route path="/about" element={<AboutGame />} />
                     <Route path="/about-team" element={<AboutTeam />} />
                     <Route path="/search" element={<Search />} />
                     <Route path="/achievements" element={<Achievements />} />

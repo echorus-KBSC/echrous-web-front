@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
 import download from '../images/icons/download.svg';
+import mainImage from '../images/main.jpg';
 
 const MainContainer = styled.div`
     display: flex;
@@ -81,14 +82,14 @@ const Main = () => {
                         </p>
                     </TitleArea>
                     <Buttons>
-                        <Button to="#">튜토리얼/개요</Button>
+                        <Button to="/about">게임 개요</Button>
                         <Button to="#">
                             <img src={download} alt="downlaod icon" /> 게임
                             다운로드
                         </Button>
                     </Buttons>
                 </TextArea>
-                <img src="https://picsum.photos/500" />
+                <img src={mainImage} />
             </MainBlock>
         </MainContainer>
     );
