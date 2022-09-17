@@ -64,3 +64,31 @@ export async function getCardsByDescription(description: string) {
     const cardsData = res.data.Cards;
     return cardsData;
 }
+
+export async function getAllAchievements() {
+    interface Data {
+        id: string;
+        name: string;
+        description: string;
+    }
+    const successList: Data[] = [];
+    const failureList: Data[] = [];
+
+    const res = await axios.get(API_BASE_URL + '/achievement');
+    res.data.forEach((data: any) => {
+        if (data.success === 1) {
+            successList.push({
+                id: data.id,
+                name: data.name,
+                description: data.description,
+            });
+        } else {
+            failureList.push({
+                id: data.id,
+                name: data.name,
+                description: data.description,
+            });
+        }
+    });
+    return [successList, failureList];
+}

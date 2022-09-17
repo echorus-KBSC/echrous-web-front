@@ -2,10 +2,19 @@ import './App.css';
 import { css, Global } from '@emotion/react';
 import normalize from 'emotion-normalize';
 import Routes from './pages/Routes';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+export const queryClient = new QueryClient({
+    defaultOptions: {
+        queries: {
+            retry: 3,
+        },
+    },
+});
 
 const App = () => {
     return (
-        <>
+        <QueryClientProvider client={queryClient}>
             <Global
                 styles={css`
                     ${normalize}
@@ -37,7 +46,7 @@ const App = () => {
                 `}
             />
             <Routes />
-        </>
+        </QueryClientProvider>
     );
 };
 
