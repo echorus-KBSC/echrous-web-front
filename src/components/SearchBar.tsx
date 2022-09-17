@@ -10,7 +10,11 @@ import searchIcon from '../images/icons/search-refraction.svg';
 import { getCardsByTitle, getCardsByDescription } from '../lib/api';
 
 const Bar = styled.div`
+    width: 1200px;
+    height: 134px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 const Form = styled.form`
     display: flex;
@@ -99,7 +103,6 @@ const SearchBar = ({ setCardsData, setIsLoading }: Props) => {
                 <button
                     type="submit"
                     css={css`
-                        margin-left: 30px;
                         width: 54px;
                         height: 54px;
                         display: flex;

@@ -23,7 +23,7 @@ const App = () => {
                         cursor: pointer;
                     }
                     body {
-                        background-color: #f5f5f5;
+                        background-color: #fff;
                     }
                     h1,
                     h2,
